@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #621402;
+    margin: 0;
+    background-image: url("../imgs/bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover
+    height: 100vh; 
+    overflow-y: auto; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding-left: 57px;
+}
+
+.menu-link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.user {
+    margin-left: auto;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 11px;
+}
+
+.film {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 63px;
+}
+
+.content {
+    color: #FFF;
+    width: 50%;
+}
+
+.play-button {
+    margin-right: 20%;
+}
+
+.film-description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.film-name-en {
+    margin: 0;
+    font-weight: 400;
+    color: #998689;
+}
+
+.film-name-ru {
+    font-weight: bold;
+    font-size: 36pt;
+    margin: 11px 0 23px;
+}
+
+.additionals {
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #FFF;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    gap: 9.5px;
+}
+
+.rate {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.separator {
+    margin-top: 69.5px;
+    border: none;
+    background-color: #ffffff80;
+    height: 1px;
+}
+
+.booking {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block-header {
+    margin: 49px 0 20px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.dates {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-container {
+    display: flex;
+    gap: 15px;
+
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 28px;
+    border: 1px solid #ffffff80;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.mont {
+    font-size: 16px;
+}
+
+.number {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.day {
+    font-size: 15px;
+}
+
+.selector {
+    background-color: #884637;
+    border: 1px solid #ffffff80;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.selector:focus {
+    outline: none;
+}
+
+.cinema {
+    margin: 0 30px 0 95px;
+}
+
+.--cinema {
+    width: 400px;
+}
+
+.date:hover {
+    background-color: #fe8e05;
+    color: #621402;
+}
+
+.scheme { 
+    background-color: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+    margin: 63px;
+}
+
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+    fill: #fe8e05;
+}
+
+.price {
+    padding: 20px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.price-label { 
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag {
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button {
+    display: block;
+    background-color: #fe8e05;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 960px;
+    }
+
+    .cinema {
+        width: 100%;
+    }
+}
+
+
+
