@@ -9,7 +9,7 @@ body {
     background-image: url("../imgs/bg.png");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover
+    background-size: cover;
     height: 100vh; 
     overflow-y: auto; 
 }
@@ -258,6 +258,7 @@ header {
         width: 100%;
     }
 }
+
 
 
 
