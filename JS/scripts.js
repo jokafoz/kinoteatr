@@ -1,8 +1,5 @@
 const schemeSvg = document.querySelector(".schemeSvg");
 const totalPriceTag = document.querySelector(".price-total");
-const playButton = document.querySelector(".play-button");
-const modal = document.querySelector("dialog");
-
 let cost = 800;
 let totalPrice = 0;
 
@@ -15,13 +12,3 @@ schemeSvg.addEventListener("click", (e) => {
 
     }
 });
-
-playButton.addEventListener("click", () => {
-    modal.showModal();
-});
-
-modal.addEventListener("click", (e) => {
-    if (e.target === document.querySelector("dialog"))
-        modal.close();
-});
-
